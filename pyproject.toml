@@ -8,7 +8,6 @@ description = ""
 readme = "README.md"
 dynamic = ["version"]
 dependencies = [ 
-	"numpy"
 ]
 
 [tool.setuptools.dynamic]
