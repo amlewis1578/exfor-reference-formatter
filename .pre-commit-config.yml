@@ -1,0 +1,8 @@
+# from https://pre-commit.com/
+
+repos:
+-   repo: https://github.com/psf/black
+    rev: 22.10.0
+    hooks:
+    -   id: black
+

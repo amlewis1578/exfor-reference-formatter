@@ -1,0 +1,11 @@
+.vscode/
+*.swp
+__pycache__/
+build/
+*.egg-info
+.egg
+lib/
+.ipynb_checkpoints
+.pyc
+.pytest_cache
+

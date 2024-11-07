@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "exforrefs"
+description = ""
+readme = "README.md"
+dynamic = ["version"]
+dependencies = [ 
+	"numpy"
+]
+
+[tool.setuptools.dynamic]
+version = {attr="exforrefs.__version__"}
+
+[tools.setuptools.packages.find]
+namespaces = true
+where = ["src"]
+
+
+[tool.setuptools]
+script-files = []
+
+
+
+[tool.pytest.ini_options]
+markers = [
+	"slow: marks tests as slow",
+	"local: marks tests that run on local scripts",
+	"fishing: marks tests that run over a lot of files to find edge cases",
+	"notready: marks tests to skip while developing one aspect"
+]
+python_files = "tests/*test.py"
+addopts = "-m 'not slow  and not notready and not fishing and not local'"
+
