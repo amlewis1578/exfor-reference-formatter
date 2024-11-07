@@ -8,6 +8,9 @@ description = ""
 readme = "README.md"
 dynamic = ["version"]
 dependencies = [ 
+	"black",
+	"pytest",
+	"pre-commit"
 ]
 
 [tool.setuptools.dynamic]
