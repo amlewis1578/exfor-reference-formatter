@@ -1,6 +1,6 @@
 # `exforrefs`
 
-a Python package to create the 
+a Python package to find and format the reference information for EXFOR entries, from a DOI.
 
 ## installation
 
